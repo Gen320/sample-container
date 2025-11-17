@@ -9,7 +9,7 @@ dockerデスクトップが立ち上がっていることを確認する
 ```bash
 docker-compose up
 ```
-- コード変更後
+- コード変更後のコンテナの起動方法
 ```bash
 docker-compose up --build
 ```
