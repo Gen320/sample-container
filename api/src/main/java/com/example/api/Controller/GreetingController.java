@@ -1,8 +1,5 @@
 package com.example.api.Controller;
 
-
-
-import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,15 +17,18 @@ public class GreetingController {
     private GreetingService service;
 
     @RequestMapping("/options")
-    public List<String> options(){
-        List<String> optionList = null;
-        optionList = service.findOptionList();
-        return optionList;
+    public Map<String, String> options(){
+        Map<String, String> optionMap = null;
+        optionMap = service.findOptionMap();
+        return optionMap;
     }
     
     @RequestMapping("/greeting")
     public String greeting(@RequestParam(required = false) String lang){
-        String text = service.findText(lang);
+        String text = " ";
+        if(!lang.isEmpty() || lang != null){
+            text = service.findText(lang);
+        }
         return text;
     }
 
