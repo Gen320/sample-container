@@ -13,6 +13,5 @@ docker-compose up --build
 
 ## 2.
 以下にアクセス
-```bash
-http://localhost:80
-```
+[http://localhost:80](http://localhost:80)
+
