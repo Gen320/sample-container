@@ -1,12 +1,18 @@
-# 検証用Docker-Image
+# 検証用docker-compose
 > nginx + Next.js + Spring Boot + postgresql で構成されている
 
-- 初回またはコード変更後のコンテナの起動の仕方
+## 1.
+- 変更なし、一度立ち上げたことがある時のコンテナの起動方法
+```bash
+docker-compose up
+```
+- コード変更後
 ```bash
 docker-compose up --build
 ```
 
-- 変更なし、一度立ち上げたことがある時のコンテナの起動方法
+## 2.
+以下にアクセス
 ```bash
-docker-compose up
+http://localhost:80
 ```
