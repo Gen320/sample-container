@@ -25,5 +25,11 @@ docker-compose up --build
 ![](./img/system-architecture.svg)
 
 ## リクエストシーケンス
+![](./img/sequence.svg)
 
+### 1. ユースケース1
+> http://localhost:80/に最初に行われる処理
+
+### 2. ユースケース2
+> セレクトボックスで言語を選択した時に行われる処理
 
